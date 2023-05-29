@@ -9,25 +9,148 @@
 }
 
 .singleColorContainer {
-    margin: 10px;
-    display: flex;
-    align-items: center;
+  margin: 10px;
+  display: flex;
+  align-items: center;
 }
+
 .color span {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 .color {
-    border: 1px solid slategrey;
-    width: 150px;
-    text-align: center;
-    align-items: center;
-    padding: 5px;
+  border: none;
+  background-color: slategrey;
+  width: 150px;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
 }
 
 .colorReference {
-    padding-left: 10px;
-    font-weight: bold;
+  padding-left: 10px;
+  font-weight: bold;
 }
+
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  animation: fadeOut 3s ease-in-out; /* Fading animation */
+}
+
+.notification.success {
+  background-color: #4CAF50; /* Green background color for success message */
+}
+
+.notification.error {
+  background-color: #e53935; /* Red background color for error message */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+#removePaletteButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#removePaletteButton:hover {
+  background-color: darkred;
+}
+.hidden {
+  display: none;
+}
+.addButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+fieldset {
+  border: none;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+.promo {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+}
+
+.promo a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.promo span {
+  font-size: 18px;
+  font-weight: bold;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
 
